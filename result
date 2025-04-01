@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidho Kanho Birsha University - 3rd Sem Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ddd;
+        }
+        .april-fool {
+            font-size: 36px;
+            font-weight: bold;
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sidho Kanho Birsha University</h2>
+        <h3>3rd Semester Results 2025</h3>
+        <label for="roll">Enter Roll Number:</label>
+        <input type="text" id="roll" placeholder="Enter your roll number">
+        <button onclick="showResult()">Get Result</button>
+        <div id="result" class="hidden">
+            <h3>Student Result</h3>
+            <table>
+                <tr>
+                    <th>SGPA</th>
+                    <td>9.2</td>
+                </tr>
+                <tr>
+                    <th>Percentage</th>
+                    <td>88%</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>Passed</td>
+                </tr>
+            </table>
+            <h3 class="april-fool">APRIL FOOL! 🎉</h3>
+            <p><strong>No results for now, just a harmless prank! 😆</strong></p>
+        </div>
+    </div>
+    <script>
+        function showResult() {
+            document.getElementById('result').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
